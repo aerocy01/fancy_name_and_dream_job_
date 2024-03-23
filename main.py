@@ -1,16 +1,37 @@
-# This is a sample Python script.
+def print_fancy(text):
+    """
+    Function to print text in a fancy way.
+    """
+    fancy_text = ""
+    for char in text:
+        fancy_text += char.upper() + " "
+    print(fancy_text)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+def main():
+    print("Welcome to the Dream Job Finder!")
+    print("Please provide the following details:")
+
+    # Asking for user's details
+    name = input("Your Name: ")
+    age = input("Your Age: ")
+    location = input("Your Location: ")
+    dream_job = input("Your Dream Job: ")
+    why_dream_job = input("Why is this your Dream Job?: ")
+    
+    # Printing in a fancy way
+    print("\nYour Fancy Details:")
+    print("Name:")
+    print_fancy(name)
+    print("\nAge:")
+    print_fancy(age)
+    print("\nLocation:")
+    print_fancy(location)
+    print("\nDream Job:")
+    print_fancy(dream_job)
+    print("\nWhy Dream Job:")
+    print_fancy(why_dream_job)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if _name_ == "_main_":
+    main()
