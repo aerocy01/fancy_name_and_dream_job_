@@ -18,7 +18,7 @@ def main():
     location = input("Your Location: ")
     dream_job = input("Your Dream Job: ")
     why_dream_job = input("Why is this your Dream Job?: ")
-    
+
     # Printing in a fancy way
     print("\nYour Fancy Details:")
     print("Name:")
@@ -33,5 +33,6 @@ def main():
     print_fancy(why_dream_job)
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
+
